@@ -5,6 +5,8 @@ import right from "../assets/icons/Right.svg"
 //?  images ///////////////////////////////////////////////
 import uruzinLogo from "../assets/images/uruzin_logo.png";
 import jasaUruzin from "../assets/images/jasa_uruzin.png";
+import vector from "../assets/images/Vector.png";
+
 
 //? client ///////////////////////////////////////////
 import lazizaa from "../assets/clients/Lazizaa.png";
@@ -20,4 +22,4 @@ import pengaturanInternalPerusahaan from "../assets/services/pengaturan-internal
 import keuanganTenagaKerja from "../assets/services/keuangan-tenaga-kerja.png";
 
 //! export ////////////////////////////////////////////////////////////////////////
-export { checked, right, uruzinLogo, jasaUruzin, lazizaa, lemooin, rajaRotiCemerlang, tirtamasColdStorage, pendirianBadanUsaha, registrasiPerizinan, sertifikasiStandar, pengaturanInternalPerusahaan, keuanganTenagaKerja };
+export { checked, right, uruzinLogo, jasaUruzin, vector, lazizaa, lemooin, rajaRotiCemerlang, tirtamasColdStorage, pendirianBadanUsaha, registrasiPerizinan, sertifikasiStandar, pengaturanInternalPerusahaan, keuanganTenagaKerja };
