@@ -12,7 +12,7 @@ import Footer from "../../components/Footer/Footer";
 const Home = () => {
   return (
     <>
-      <div className="flex-col mx-20">
+      <div className="flex-col mx-[15%]">
         <Navbar />
         <Main />
         <Layanan />

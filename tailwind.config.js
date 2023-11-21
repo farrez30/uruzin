@@ -2,6 +2,26 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    colors: {
+      'green-uruzin': '#009D5A',
+      'gray-uruzin': '#5D737E',
+      'light-gray-uruzin': '#D9D9D9',
+      'dark-blue-uruzin': '#0F2137',
+      'black-uruzin': '#12130F',
+      'black-pure': '#000000',
+      'white-pure': '#FFFFFF',
+      'purple-uruzin': '#02073E',
+      'blue-uruzin': '#4F96FF',
+      'primary-content-uruzin': '#1D2130',
+      'secondary-content-uruzin': '#525560',
+      
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+      poppins: ['Poppins', 'sans-serif'],
+      dm: ['DM Sans', 'sans-serif'],
+    },
     extend: {
       animation: {
         bounceright: "bounceright 1s infinite",

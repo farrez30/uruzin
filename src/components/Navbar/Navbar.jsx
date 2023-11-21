@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="flex justify-around my-12 mx-auto">
+      <div className="flex justify-between my-12">
         <div>
           <img src={uruzinLogo} className="h-9" alt="uruzin logo" />
         </div>

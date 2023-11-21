@@ -22,11 +22,10 @@ const Main = () => {
     },
   ];
   return (
-    <header className="flex">
-      <article>
-        <div className="flex-col text-start ml-48 mt-32">
-          <h1 className="font-bold text-5xl">Urus Izin Usaha</h1>
-          <h1 className="font-bold text-5xl mt-4">Jadi Semudah Itu!</h1>
+    <header className="flex justify-between gap-[60px] mt-[90px]">
+      <article className="w-[50%]">
+        <div className="flex-col text-start">
+          <h1 className="font-poppins font-semibold text-[55px] leading-[80px] -tracking-[1px]">Urus Izin Usaha Jadi Semudah Itu!</h1>
           <p className="mt-8 leading-9 max-w-md mr-14">
             Percayakan urusan perizinan bisnis Anda pada PT Uruzin Solusi Bisnis. Kami hadir untuk menjadikan proses
             perizinan usaha semudah mungkin.
@@ -44,7 +43,9 @@ const Main = () => {
           </div>
         </div>
       </article>
-      <img src={jasaUruzin} alt="jasa uruzin" className="h-[630px]" />
+      <div className="w-[50%]">
+        <img src={jasaUruzin} alt="jasa uruzin" className="object-contain" />
+      </div>
     </header>
   );
 };
