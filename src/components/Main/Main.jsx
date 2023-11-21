@@ -22,7 +22,7 @@ const Main = () => {
     },
   ];
   return (
-    <section className="flex">
+    <header className="flex">
       <article>
         <div className="flex-col text-start ml-48 mt-32">
           <h1 className="font-bold text-5xl">Urus Izin Usaha</h1>
@@ -45,7 +45,7 @@ const Main = () => {
         </div>
       </article>
       <img src={jasaUruzin} alt="jasa uruzin" className="h-[630px]" />
-    </section>
+    </header>
   );
 };
 
