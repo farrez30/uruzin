@@ -116,7 +116,7 @@ const Layanan = () => {
                 <>
                   <div className="w-[50%]"><img src={image} alt={title} /></div>
                   <article className="flex-col w-[50%]">
-                    <title className="flex gap-5 py-5 items-center border border-green-uruzin">
+                    <title className="flex gap-5 py-5 items-center">
                       <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">{no}</h1>
                       <h1 className="font-poppins font-medium text-[30px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">{title}</h1>
                     </title>

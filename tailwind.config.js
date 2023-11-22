@@ -13,8 +13,7 @@ module.exports = {
       'purple-uruzin': '#02073E',
       'blue-uruzin': '#4F96FF',
       'primary-content-uruzin': '#1D2130',
-      'secondary-content-uruzin': '#525560',
-      
+      'secondary-content-uruzin': '#525560',      
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -23,6 +22,9 @@ module.exports = {
       dm: ['DM Sans', 'sans-serif'],
     },
     extend: {
+      backgroundImage: {
+        // 'vector': "url('./src/assets/images/Vector.png')",
+      },
       animation: {
         bounceright: "bounceright 1s infinite",
         // greenright: "greenright 1s infinite",
