@@ -31,7 +31,7 @@ const KomitmenKami = () => {
     },
     {
       id: 2,
-      title: ">30",
+      title: "30",
       desc: "Pengurusan Sertifikasi Halal",
     },
     {
@@ -41,14 +41,14 @@ const KomitmenKami = () => {
     },
     {
       id: 4,
-      title: "3M",
-      desc: "Job posted everydays with  qualification",
+      title: ">5",
+      desc: "Berpengalaman Di Bidang Legal & Perizinan Usaha",
     },
   ];
   return (
-    <section className="max-w-[1170px]">
+    <section className="max-w-[1170px] mb-[152px]">
       <article className="flex-col flex justify-center gap-[21px] max-w-[1109px] mb-5">
-        <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max ml-2">
+        <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max">
           KOMITMEN KAMI
         </h2>
         <h1 className="font-poppins font-medium text-[40px] leading-[50px] text-dark-blue-uruzin -tracking-[0.5px]">Percayakan Urusan Anda kepada Uruzin</h1>
@@ -78,8 +78,8 @@ const KomitmenKami = () => {
             {validasiLayanan.slice(0, 2).map(({ id, title, desc }) => {
               return (
                 <div className="flex flex-col px-[87px] py-[98px] mb-[45px] text-center w-[300px] rounded-[10px] bg-white-pure drop-shadow-[0_25px_100px_#44589d14]">
-                  <div>
-                    <h1 className="font-dm font-medium text-[72px] leading-[55px] -tracking-[1.5px] text-green-uruzin">{title}{id === 2 && <small className="font-dm font-medium text-[20px] leading-[55px] -tracking-[1.5px] text-green-uruzin">Hari</small>}</h1>
+                  <div className={id === 2 ? "" : "mb-5"}>
+                    <h1 className="font-dm font-medium text-[72px] leading-[55px] -tracking-[1.5px] text-green-uruzin">{title}{id === 2 && <small className="font-dm font-medium text-[20px] leading-[55px] -tracking-[1.5px] text-green-uruzin">Hari*</small>}</h1>
                   </div>
                   <div>
                     <p className="font-poppins font-normal text-[17px] leading-[25px] -tracking-[0.2px] text-dark-blue-uruzin">{desc}</p>
@@ -91,9 +91,9 @@ const KomitmenKami = () => {
           <div className="flex flex-col gap-4">
             {validasiLayanan.slice(2).map(({ id, title, desc }) => {
               return (
-                <div className="flex flex-col px-[87px] py-[98px] mb-[45px] text-center w-[300px] rounded-[10px] bg-white-pure drop-shadow-[0_25px_100px_#44589d14]">
-                  <div>
-                    <h1 className="font-dm font-medium text-[72px] leading-[55px] -tracking-[1.5px] text-green-uruzin">{title}</h1>
+                <div className="flex flex-col px-[70px] py-[98px] mb-[45px] text-center w-[300px] rounded-[10px] bg-white-pure drop-shadow-[0_25px_100px_#44589d14]">
+                  <div className={id === 4 ? "" : "mb-5"}>
+                    <h1 className="font-dm font-medium text-[72px] leading-[55px] -tracking-[1.5px] text-green-uruzin">{title}{id === 4 && <small className="font-dm font-medium text-[20px] leading-[55px] -tracking-[1.5px] text-green-uruzin">Tahun</small>}</h1>
                   </div>
                   <div>
                     <p className="font-poppins font-normal text-[17px] leading-[25px] -tracking-[0.2px] text-dark-blue-uruzin">{desc}</p>
