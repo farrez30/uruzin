@@ -12,9 +12,10 @@ import Footer from "../../components/Footer/Footer";
 const Home = () => {
   return (
     <>
+      <Navbar />
       <div className="flex-col mx-[15%]">
-        <Navbar />
         <Main />
+        {/* <div id="layanan"></div> */}
         <Layanan />
         <CTA />
         <KomitmenKami />

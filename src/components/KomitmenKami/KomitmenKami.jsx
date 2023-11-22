@@ -46,7 +46,7 @@ const KomitmenKami = () => {
     },
   ];
   return (
-    <section className="max-w-[1170px] mb-[152px]">
+    <section id="tentang" className="max-w-[1170px] mb-[152px]">
       <article className="flex-col flex justify-center gap-[21px] max-w-[1109px] mb-5">
         <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max">
           KOMITMEN KAMI

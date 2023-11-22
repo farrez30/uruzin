@@ -59,7 +59,8 @@ const Layanan = () => {
     },
   ];
   return (
-    <section className="flex-col mt-44">
+    <section id="layanan" className="flex-col mt-44">
+                {/* <div id="layanan"></div> */}
       <article className="flex-col mx-auto gap-5">
         <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max mx-auto">
           LAYANAN KAMI
@@ -80,15 +81,23 @@ const Layanan = () => {
                 <>
                   <article className="flex-col w-[50%]">
                     <title className="flex gap-5 py-5 items-center">
-                      <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">{no}</h1>
-                      <h1 className="font-poppins font-medium text-[32px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">{title}</h1>
+                      <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">
+                        {no}
+                      </h1>
+                      <h1 className="font-poppins font-medium text-[32px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">
+                        {title}
+                      </h1>
                     </title>
-                    <p className="font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">{desc}</p>
+                    <p className="font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">
+                      {desc}
+                    </p>
                     <ul>
                       {subJasa.map((jasa) => (
                         <li className="flex gap-2">
                           <img src={checked} alt={jasa} />
-                          <div className="font-poppins font-medium text-[12px] leading-[45px] text-purple-uruzin tracking-[0px]">{jasa}</div>
+                          <div className="font-poppins font-medium text-[12px] leading-[45px] text-purple-uruzin tracking-[0px]">
+                            {jasa}
+                          </div>
                         </li>
                       ))}
                     </ul>
@@ -110,22 +119,34 @@ const Layanan = () => {
                       {/* //? End of Animated Button  ///////////////////////////////////// */}
                     </a>
                   </article>
-                  <div className="w-[50%]"><img src={image} alt={title} /></div>
+                  <div className="w-[50%]">
+                    <img src={image} alt={title} />
+                  </div>
                 </>
               ) : (
                 <>
-                  <div className="w-[50%]"><img src={image} alt={title} /></div>
+                  <div className="w-[50%]">
+                    <img src={image} alt={title} />
+                  </div>
                   <article className="flex-col w-[50%]">
                     <title className="flex gap-5 py-5 items-center">
-                      <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">{no}</h1>
-                      <h1 className="font-poppins font-medium text-[30px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">{title}</h1>
+                      <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">
+                        {no}
+                      </h1>
+                      <h1 className="font-poppins font-medium text-[30px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">
+                        {title}
+                      </h1>
                     </title>
-                    <p className="font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">{desc}</p>
+                    <p className="font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">
+                      {desc}
+                    </p>
                     <ul>
                       {subJasa.map((jasa) => (
                         <li className="flex gap-2">
                           <img src={checked} alt={jasa} />
-                          <div className="font-poppins font-medium text-[12px] leading-[45px] text-purple-uruzin tracking-[0px]">{jasa}</div>
+                          <div className="font-poppins font-medium text-[12px] leading-[45px] text-purple-uruzin tracking-[0px]">
+                            {jasa}
+                          </div>
                         </li>
                       ))}
                     </ul>

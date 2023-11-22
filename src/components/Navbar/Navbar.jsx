@@ -1,28 +1,55 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { uruzinLogo } from "../../assets/picture";
 const Navbar = () => {
+  const [activeNav, setActiveNav] = useState("#");
+
+  // Fungsi untuk memantau posisi scroll
   const menuItem = [
     {
-      to: "/layanan",
+      to: "#layanan",
       title: "Layanan",
     },
     {
-      to: "/tentang-kami",
+      to: "#tentang",
       title: "Tentang Kami",
     },
     {
-      to: "/qna",
+      to: "#qna",
       title: "QnA",
     },
     {
-      to: "/hubungikami",
+      to: "#hubungi",
       title: "Hubungi Kami",
     },
   ];
+  const handleScroll = () => {
+    // Menentukan bagian mana yang sedang aktif berdasarkan posisi scroll
+    for (const section of menuItem) {
+      const elem = document.querySelector(section.to);
+      if (elem) {
+        const rect = elem.getBoundingClientRect();
+        if (rect.top <= 300 && rect.bottom >= 300) {
+          setActiveNav(section.to);
+          break; // Keluar dari loop setelah menemukan bagian yang aktif
+        }
+      }
+    }
+  };
+
+  // Menjalankan handleScroll saat komponen dimuat dan ketika scrolling terjadi
+  useEffect(() => {
+    handleScroll(); // Memastikan kondisi awal saat komponen dimuat
+    window.addEventListener("scroll", handleScroll);
+
+    // Membersihkan event listener saat komponen unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="flex justify-between my-12">
+      <div className="flex justify-between px-[15%] bg-white-pure py-12 sticky top-0 z-50 ">
         <div>
           <img src={uruzinLogo} className="h-9" alt="uruzin logo" />
         </div>
@@ -30,9 +57,15 @@ const Navbar = () => {
           {menuItem.map(({ to, title }) => {
             return (
               <>
-                <Link to={to} className="font-poppins font-medium text-[16px] leading-[33px] tracking-[0px] text-dark-blue-uruzin hover:text-green-uruzin">
+                <a
+                  href={to}
+                  onClick={() => setActiveNav(to)}
+                  className={`hover:text-green-uruzin font-poppins font-medium text-[16px] leading-[33px] tracking-[0px] text-dark-blue-uruzin ${
+                    activeNav === to ? "text-green-uruzin" : ""
+                  }`}
+                >
                   {title}
-                </Link>
+                </a>
               </>
             );
           })}

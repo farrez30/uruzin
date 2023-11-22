@@ -31,6 +31,7 @@ const CTA = () => {
               data-rounded="rounded-lg"
             ></span>
           </a> */}
+          {/* <div id="tentang"></div> */}
       </div>
     </>
   );
