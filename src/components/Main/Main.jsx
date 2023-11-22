@@ -26,14 +26,14 @@ const Main = () => {
       <article className="w-[50%]">
         <div className="flex-col text-start">
           <h1 className="font-poppins font-semibold text-[55px] leading-[80px] -tracking-[1px]">Urus Izin Usaha Jadi Semudah Itu!</h1>
-          <p className="mt-8 leading-9 max-w-md mr-14">
+          <p className="font-poppins font-normal text-[18px] leading-[42px] text-gray-uruzin tracking-[0px] mt-8">
             Percayakan urusan perizinan bisnis Anda pada PT Uruzin Solusi Bisnis. Kami hadir untuk menjadikan proses
             perizinan usaha semudah mungkin.
           </p>
-          <button className="mt-10 py-3 px-6 bg-green-600 text-white rounded-lg">Hubungi Kami</button>
-          <p className="mt-14">Dipercaya Oleh</p>
+          <button className="font-dm font-bold text-[18px] leading-[10px] tracking-[0px] mt-10 p-[25px] bg-green-uruzin text-white-pure rounded-lg">Hubungi Kami</button>
+          <p className="font-poppins font-medium text-[16px] leading-[10px] tracking-[0px] text-dark-blue-uruzin mt-14">Dipercaya Oleh</p>
           <div className="flex mt-3 gap-2">
-            {clientItem.map(({ logo, title }) => {
+            {clientItem.map(({ logo, title }) => {  
               return (
                 <>
                   <img src={logo} alt={title} className="h-11" />

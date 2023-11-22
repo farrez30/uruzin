@@ -30,7 +30,7 @@ const Navbar = () => {
           {menuItem.map(({ to, title }) => {
             return (
               <>
-                <Link to={to} className="hover:text-green-500">
+                <Link to={to} className="font-poppins font-medium text-[16px] leading-[33px] tracking-[0px] text-dark-blue-uruzin hover:text-green-uruzin">
                   {title}
                 </Link>
               </>
