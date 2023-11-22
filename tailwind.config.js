@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       'green-uruzin': '#009D5A',
+      'light-green-uruzin': '#83D187',
       'gray-uruzin': '#5D737E',
       'light-gray-uruzin': '#D9D9D9',
       'dark-blue-uruzin': '#0F2137',

@@ -5,11 +5,9 @@ import { vector } from "../../assets/picture";
 const CTA = () => {
   return (
     <>
-      <div className="w-[100%] h-[360px] relative border border-solid border-green-uruzin rounded-[20px] bg-none -z-10 top-[342px] right-3.5"></div>
-        <img src={vector} alt="just decoration" className="absolute right-[15%]" />
-      <div className="font-['Poppins'] flex-col bg-vector bg-gradient-to-br from-[#009d5a] to-[#007342] rounded-[20px] px-14 pb-32 pt-[69px] pl-[67px] max-h-[360px] mb-44">
-      {/* <div className="bg-clip-content p-6 bg-violet-600 border-4 border-violet-300 border-dashed">asad</div> */}
-        {/* <div className="flex-col bg-gradient-to-br from-[#009d5a] to-[#007342] rounded-lg shadow-[-10px_-10px_rgba(0,90,0,0.3)] px-14 pb-7 mx-48 max-w mb-44"> */}
+      <div className="w-[100%] h-[360px] -mt-[360px] relative border border-solid border-green-uruzin rounded-[20px] bg-none -z-10 top-[342px] right-3.5"></div>
+      <img src={vector} alt="just decoration" className="absolute right-[15%]" />
+      <div className="font-['Poppins'] flex-col bg-vector bg-gradient-to-br from-[#009d5a] to-[#007342] rounded-[20px] px-14 pb-32 pt-[69px] pl-[67px] max-h-[360px] mb-[51px]">
         <h1 className="font-poppins font-medium text-[40px] leading-[60px] -tracking-[1.5px] text-white-pure mb-2 z-30">
           Bingung mau mulai dari mana?
         </h1>

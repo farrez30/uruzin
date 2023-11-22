@@ -61,7 +61,7 @@ const Layanan = () => {
   return (
     <section className="flex-col mt-44">
       <article className="flex-col mx-auto gap-5">
-        <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin max-w-max mx-auto py-[5px] px-7">
+        <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max mx-auto">
           LAYANAN KAMI
         </h2>
         <h1 className="font-poppins font-medium text-[40px] leading-[50px] text-black-uruzin -tracking-[0.5px] text-center mt-5">
