@@ -59,41 +59,41 @@ const Layanan = () => {
     },
   ];
   return (
-    <section className="flex-col mt-40">
-      <article className="mx-auto">
-        <h2 className="text-green-500 rounded-lg outline outline-2 outline-green-500 outline-offset-8 max-w-max mx-auto py-1 px-7">
+    <section className="flex-col mt-44">
+      <article className="flex-col mx-auto gap-5">
+        <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin max-w-max mx-auto py-[5px] px-7">
           LAYANAN KAMI
         </h2>
-        <h1 className="text-center text-4xl font-semibold mt-5">
+        <h1 className="font-poppins font-medium text-[40px] leading-[50px] text-black-uruzin -tracking-[0.5px] text-center mt-5">
           Layanan Izin Usaha <i>All in One</i>
         </h1>
-        <p className="text-center mt-5 leading-9 mx-96 mb-16">
+        <p className="font-poppins font-normal text-[16px] leading-[35px] text-gray-uruzin tracking-[0px] text-center mx-auto  mt-5 max-w-2xl mb-16">
           Solusi lengkap dalam satu tempat! Uruzin menawarkan paket layanan terintegrasi yang Hemat waktu dan tenaga
           dengan layanan all-in-one kami.
         </p>
       </article>
-      <article className="mx-48">
+      <article>
         {jenisLayanan.map(({ id, no, image, title, desc, subJasa }) => {
           return (
-            <div className="flex items-center gap-24 mb-32 justify-center">
+            <div className="flex items-center gap-[101px] mb-32 justify-center">
               {id % 2 === 0 ? (
                 <>
-                  <article className="flex-col">
-                    <title className="flex gap-5 text-2xl font-semibold px-5 py-5 my items-center">
-                      <h1 className="bg-white px-5 py-3 rounded-full drop-shadow-lg shadow-green-600">{no}</h1>
-                      <h1>{title}</h1>
+                  <article className="flex-col w-[50%]">
+                    <title className="flex gap-5 py-5 items-center">
+                      <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">{no}</h1>
+                      <h1 className="font-poppins font-medium text-[32px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">{title}</h1>
                     </title>
-                    <p className="mb-5 leading-9">{desc}</p>
+                    <p className="font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">{desc}</p>
                     <ul>
                       {subJasa.map((jasa) => (
-                        <li className="flex gap-2 py-3">
+                        <li className="flex gap-2">
                           <img src={checked} alt={jasa} />
-                          {jasa}
+                          <div className="font-poppins font-medium text-[12px] leading-[45px] text-purple-uruzin tracking-[0px]">{jasa}</div>
                         </li>
                       ))}
                     </ul>
-                    <a href="" className="flex items-baseline text-blue-500 py-3 max-w-max mt-4">
-                      <p className="mr-5">Hubungi Kami</p>
+                    <a href="" className="flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
+                      <p className="font-dm font-bold text-[16px] leading-[42px] tracking-[0px] mr-5">Hubungi Kami</p>
                       <img src={right} alt="right-arrow" className="animate-bounceright" />
                       {/* ///////////////////////////////////////////////////////////////////////// */}
                       {/* //? Start of Animated Button  ///////////////////////////////////// */}
@@ -110,27 +110,27 @@ const Layanan = () => {
                       {/* //? End of Animated Button  ///////////////////////////////////// */}
                     </a>
                   </article>
-                  <img src={image} alt={title} className="h-96" />
+                  <div className="w-[50%]"><img src={image} alt={title} /></div>
                 </>
               ) : (
                 <>
-                  <img src={image} alt={title} className="h-96" />
-                  <article className="flex-col">
-                    <title className="flex gap-5 text-2xl font-semibold px-5 py-5 my items-center">
-                      <h1 className="bg-white px-5 py-3 rounded-full drop-shadow-lg shadow-green-600">{no}</h1>
-                      <h1>{title}</h1>
+                  <div className="w-[50%]"><img src={image} alt={title} /></div>
+                  <article className="flex-col w-[50%]">
+                    <title className="flex gap-5 py-5 items-center border border-green-uruzin">
+                      <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">{no}</h1>
+                      <h1 className="font-poppins font-medium text-[30px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">{title}</h1>
                     </title>
-                    <p className="mb-5 leading-9">{desc}</p>
+                    <p className="font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">{desc}</p>
                     <ul>
                       {subJasa.map((jasa) => (
-                        <li className="flex gap-2 py-3">
+                        <li className="flex gap-2">
                           <img src={checked} alt={jasa} />
-                          {jasa}
+                          <div className="font-poppins font-medium text-[12px] leading-[45px] text-purple-uruzin tracking-[0px]">{jasa}</div>
                         </li>
                       ))}
                     </ul>
-                    <a href="" className="flex items-baseline text-blue-500 py-3 max-w-max mt-4">
-                      <p className="mr-5">Hubungi Kami</p>
+                    <a href="" className="flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
+                      <p className="font-dm font-bold text-[16px] leading-[42px] tracking-[0px] mr-5">Hubungi Kami</p>
                       <img src={right} alt="right-arrow" className="animate-bounceright" />
                       {/* ///////////////////////////////////////////////////////////////////////// */}
                       {/* //? Start of Animated Button  ///////////////////////////////////// */}
