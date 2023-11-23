@@ -30,7 +30,7 @@ const Main = () => {
             Percayakan urusan perizinan bisnis Anda pada PT Uruzin Solusi Bisnis. Kami hadir untuk menjadikan proses
             perizinan usaha semudah mungkin.
           </p>
-          <button className="font-dm font-bold text-[18px] leading-[10px] tracking-[0px] mt-10 p-[25px] bg-green-uruzin text-white-pure rounded-lg">Hubungi Kami</button>
+          <a href="https://wa.me/6285186845500"><button className="font-dm font-bold text-[18px] leading-[10px] tracking-[0px] mt-10 p-[25px] bg-green-uruzin text-white-pure rounded-lg">Hubungi Kami</button></a>
           <p className="font-poppins font-medium text-[16px] leading-[10px] tracking-[0px] text-dark-blue-uruzin mt-14">Dipercaya Oleh</p>
           <div className="flex mt-3 gap-2">
             {clientItem.map(({ logo, title }) => {  

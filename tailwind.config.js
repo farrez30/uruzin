@@ -16,6 +16,7 @@ module.exports = {
       'primary-content-uruzin': '#1D2130',
       'secondary-content-uruzin': '#525560',      
       'light-dark-uruzin': '#343D48',      
+      'red-pure': '#FF0000',      
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

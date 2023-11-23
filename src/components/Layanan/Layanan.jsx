@@ -59,8 +59,7 @@ const Layanan = () => {
     },
   ];
   return (
-    <section id="layanan" className="flex-col mt-44">
-                {/* <div id="layanan"></div> */}
+    <section id="layanan" className="flex-col pt-44">
       <article className="flex-col mx-auto gap-5">
         <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max mx-auto">
           LAYANAN KAMI
@@ -101,7 +100,7 @@ const Layanan = () => {
                         </li>
                       ))}
                     </ul>
-                    <a href="" className="flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
+                    <a href="https://wa.me/6285186845500" className="flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
                       <p className="font-dm font-bold text-[16px] leading-[42px] tracking-[0px] mr-5">Hubungi Kami</p>
                       <img src={right} alt="right-arrow" className="animate-bounceright" />
                       {/* ///////////////////////////////////////////////////////////////////////// */}
@@ -150,7 +149,7 @@ const Layanan = () => {
                         </li>
                       ))}
                     </ul>
-                    <a href="" className="flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
+                    <a href="https://wa.me/6285186845500" className="flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
                       <p className="font-dm font-bold text-[16px] leading-[42px] tracking-[0px] mr-5">Hubungi Kami</p>
                       <img src={right} alt="right-arrow" className="animate-bounceright" />
                       {/* ///////////////////////////////////////////////////////////////////////// */}

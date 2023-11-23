@@ -15,7 +15,6 @@ const Home = () => {
       <Navbar />
       <div className="flex-col mx-[15%]">
         <Main />
-        {/* <div id="layanan"></div> */}
         <Layanan />
         <CTA />
         <KomitmenKami />
