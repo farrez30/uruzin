@@ -64,10 +64,10 @@ const Layanan = () => {
         <h2 className="hidden lg:block font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max mx-auto">
           LAYANAN KAMI
         </h2>
-        <h1 className="font-poppins font-medium text-[40px] leading-[50px] text-black-uruzin -tracking-[0.5px] text-center mt-5">
+        <h1 className="font-poppins font-medium text-[35px] leading-[50px] text-black-uruzin -tracking-[0.5px] text-left mt-[17.5px]">
           Layanan Izin Usaha <i>All in One</i>
         </h1>
-        <p className="font-poppins font-normal text-[16px] leading-[35px] text-gray-uruzin tracking-[0px] text-center mx-auto  mt-5 max-w-2xl mb-16">
+        <p className="font-poppins font-normal text-[16px] leading-[25px] text-gray-uruzin tracking-[0px] text-left mx-auto  mt-5 max-w-2xl mb-16">
           Solusi lengkap dalam satu tempat! Uruzin menawarkan paket layanan terintegrasi yang Hemat waktu dan tenaga
           dengan layanan all-in-one kami.
         </p>
@@ -75,24 +75,27 @@ const Layanan = () => {
       <article>
         {jenisLayanan.map(({ id, no, image, title, desc, subJasa }) => {
           return (
-            <div className="flex items-center gap-[101px] mb-32 justify-center">
+            <div className="flex flex-col lg:flex-row items-center gap-[0px] lg:gap-[101px] mb-[40px] lg:mb-32 justify-center">
               {id % 2 === 0 ? (
                 <>
-                  <article className="flex-col w-[50%]">
-                    <title className="flex gap-5 py-5 items-center">
-                      <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">
+                  <div className="w-[200px] self-start lg:w-[50%] lg:hidden">
+                    <img src={image} alt={title} />
+                  </div>
+                  <article className="flex-col lg:w-[50%]">
+                    <title className="flex gap-[15px] lg:gap-5 py-[2px] lg:py-5 items-center">
+                      <h1 className="font-poppins font-medium text-[20px] lg:text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">
                         {no}
                       </h1>
-                      <h1 className="font-poppins font-medium text-[32px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">
+                      <h1 className="font-poppins font-medium text-[24px] lg:text-[30px] leading-[25px] lg:leading-[60px] text-dark-blue-uruzin tracking-[0px] lg:-tracking-[1.5px]">
                         {title}
                       </h1>
                     </title>
-                    <p className="font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">
+                    <p className="hidden lg:block font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">
                       {desc}
                     </p>
                     <ul>
                       {subJasa.map((jasa) => (
-                        <li className="flex gap-2">
+                        <li className="flex gap-[10px]">
                           <img src={checked} alt={jasa} />
                           <div className="font-poppins font-medium text-[12px] leading-[45px] text-purple-uruzin tracking-[0px]">
                             {jasa}
@@ -100,7 +103,7 @@ const Layanan = () => {
                         </li>
                       ))}
                     </ul>
-                    <a href="https://wa.me/6285186845500" className="flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
+                    <a href="https://wa.me/6285186845500" className="hidden lg:flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
                       <p className="font-dm font-bold text-[16px] leading-[42px] tracking-[0px] mr-5">Hubungi Kami</p>
                       <img src={right} alt="right-arrow" className="animate-bounceright" />
                       {/* ///////////////////////////////////////////////////////////////////////// */}
@@ -118,30 +121,30 @@ const Layanan = () => {
                       {/* //? End of Animated Button  ///////////////////////////////////// */}
                     </a>
                   </article>
-                  <div className="w-[50%]">
+                  <div className="hidden lg:block w-[50%]">
                     <img src={image} alt={title} />
                   </div>
                 </>
               ) : (
                 <>
-                  <div className="w-[50%]">
+                  <div className="w-[200px] self-start lg:w-[50%]">
                     <img src={image} alt={title} />
                   </div>
-                  <article className="flex-col w-[50%]">
-                    <title className="flex gap-5 py-5 items-center">
-                      <h1 className="font-poppins font-medium text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">
+                  <article className="flex-col lg:w-[50%]">
+                    <title className="flex gap-[15px] lg:gap-5 py-[2px] lg:py-5 items-center">
+                      <h1 className="font-poppins font-medium text-[20px] lg:text-[25px] leading-[60px] text-black-pure -tracking-[1.5px] bg-white-pure w-[54px] h-[54px] text-center rounded-[27px] drop-shadow-[0_8px_24px_#355f9e1a] shadow-black-pure">
                         {no}
                       </h1>
-                      <h1 className="font-poppins font-medium text-[30px] leading-[60px] text-dark-blue-uruzin -tracking-[1.5px]">
+                      <h1 className="font-poppins font-medium text-[24px] lg:text-[30px] leading-[25px] lg:leading-[60px] text-dark-blue-uruzin tracking-[0px] lg:-tracking-[1.5px]">
                         {title}
                       </h1>
                     </title>
-                    <p className="font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">
+                    <p className="hidden lg:block font-poppins font-normal text-[12px] leading-[25px] text-gray-uruzin tracking-[0px] mb-5">
                       {desc}
                     </p>
                     <ul>
                       {subJasa.map((jasa) => (
-                        <li className="flex gap-2">
+                        <li className="flex gap-[10px]">
                           <img src={checked} alt={jasa} />
                           <div className="font-poppins font-medium text-[12px] leading-[45px] text-purple-uruzin tracking-[0px]">
                             {jasa}
@@ -149,7 +152,7 @@ const Layanan = () => {
                         </li>
                       ))}
                     </ul>
-                    <a href="https://wa.me/6285186845500" className="flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
+                    <a href="https://wa.me/6285186845500" className="hidden lg:flex items-baseline text-blue-uruzin py-3 max-w-max mt-4">
                       <p className="font-dm font-bold text-[16px] leading-[42px] tracking-[0px] mr-5">Hubungi Kami</p>
                       <img src={right} alt="right-arrow" className="animate-bounceright" />
                       {/* ///////////////////////////////////////////////////////////////////////// */}
