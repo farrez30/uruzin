@@ -108,7 +108,7 @@ const Main = () => {
           </div>
         </div>
         {/* //? ///////////////// */}
-        <div className="lg:hidden flex border pt-[14px] pb-[44px] border-green-uruzin  gap-[25px] ">
+        <div className="lg:hidden flex border pt-[14px] pb-[22.5px] border-green-uruzin  gap-[25px] ">
           <div className="shrink-0 flex justify-between w-[156px] h-[50px] bg-white-pure rounded-[20px] drop-shadow-xl shadow-black-pure border">
             <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
               BPOM
