@@ -92,26 +92,41 @@ const Main = () => {
         <img src={listjasa} alt="jasa uruzin" className="object-contain" />
       </div> */}
 
-      <div className="lg:hidden mt-10 flex border border-green-uruzin p-8 overflow-hidden overflow-x-scroll gap-[25px] ">
-        <div className="shrink-0 flex justify-between w-[234px] h-[50px] bg-white-pure rounded-[20px] shadow-2xl shadow-black-pure border">
-          <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
-            Pendirian PT,CV
-          </h1>
-          <img src={checked} alt="jasa uruzin" className="border z-50 h-[67px] self-center translate-x-2" />
+      <div className="overflow-hidden overflow-x-scroll">
+        <div className="lg:hidden mt-[44px] flex border pb-[14px] border-green-uruzin gap-[25px]  ">
+          <div className="shrink-0 flex justify-between w-[234px] h-[50px] bg-white-pure rounded-[20px] drop-shadow-xl shadow-black-pure border">
+            <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
+              Pendirian PT,CV
+            </h1>
+            <img src={checked} alt="jasa uruzin" className="border z-50 h-[67px] self-center translate-x-2" />
+          </div>
+          <div className="shrink-0 flex justify-between w-[183px] h-[50px] bg-white-pure rounded-[20px] drop-shadow-xl shadow-black-pure border">
+            <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
+              Halal MUI
+            </h1>
+            <img src={checked} alt="jasa uruzin" className="border z-50 h-[67px] self-center translate-x-2" />
+          </div>
         </div>
-
-        <div className="shrink-0 flex justify-between w-[234px] h-[50px] bg-white-pure rounded-[20px] shadow-2xl shadow-black-pure border">
-          <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
-            Pendirian PT,CV
-          </h1>
-          <img src={checked} alt="jasa uruzin" className="border z-50 h-[67px] self-center translate-x-2" />
-        </div>
-
-        <div className="shrink-0 flex justify-between w-[234px] h-[50px] bg-white-pure rounded-[20px] shadow-2xl shadow-black-pure border">
-          <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
-            Pendirian PT,CV
-          </h1>
-          <img src={checked} alt="jasa uruzin" className="border z-50 h-[67px] self-center translate-x-2" />
+        {/* //? ///////////////// */}
+        <div className="lg:hidden flex border pt-[14px] pb-[44px] border-green-uruzin  gap-[25px] ">
+          <div className="shrink-0 flex justify-between w-[156px] h-[50px] bg-white-pure rounded-[20px] drop-shadow-xl shadow-black-pure border">
+            <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
+              BPOM
+            </h1>
+            <img src={checked} alt="jasa uruzin" className="border z-50 h-[67px] self-center translate-x-2" />
+          </div>
+          <div className="shrink-0 flex justify-between w-[156px] h-[50px] bg-white-pure rounded-[20px] drop-shadow-xl shadow-black-pure border">
+            <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
+              IMB
+            </h1>
+            <img src={checked} alt="jasa uruzin" className="border z-50 h-[67px] self-center translate-x-2" />
+          </div>
+          <div className="shrink-0 flex justify-between w-[156px] h-[50px] bg-white-pure rounded-[20px] drop-shadow-xl shadow-black-pure border">
+            <h1 className="border ml-[23px] self-center font-poppins font-semibold text-black-pure text-[16px] tracking-[0px] leading-[60px]">
+              Dll.
+            </h1>
+            <img src={checked} alt="jasa uruzin" className="border z-50 h-[67px] self-center translate-x-2" />
+          </div>
         </div>
       </div>
     </header>
