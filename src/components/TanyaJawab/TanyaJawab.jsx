@@ -35,7 +35,7 @@ const TanyaJawab = () => {
   ];
   return (
     <div>
-      <section id="qna"  className="flex-col pt-44">
+      <section id="qna"  className="hidden lg:flex flex-col pt-44">
         <article className="flex-col mx-auto gap-5">
           <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max mx-auto">
             TANYA JAWAB
