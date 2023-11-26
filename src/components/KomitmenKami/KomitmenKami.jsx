@@ -46,7 +46,7 @@ const KomitmenKami = () => {
     },
   ];
   return (
-    <section id="tentangkami" className="max-w-[1170px] mb-[152px] lg:pt-[150px]">
+    <section id="tentangkami" className="max-w-[1170px] mb-[40px] lg:mb-[152px] lg:pt-[150px]">
       <div class="lg:hidden flex flex-row gap-[14px] mb-[35px]">
         <div className="flex flex-col gap-[10px] w-[50%]">
           {validasiLayanan.slice(0, 2).map(({ id, title, desc }) => {
@@ -109,7 +109,7 @@ const KomitmenKami = () => {
         </p>
       </article>
       {/* //? Section Bawah  ///////////////////////////////////////////////////////////////////////////////////////////// */}
-      <div className="flex gap-[115px]">
+      <div className="flex lg:gap-[115px]">
         <ul className="flex-col flex gap-10 lg:my-[31.5px] lg:w-[50%] border border-dashed">
           {fiturLayanan.map(({ id, image, title, desc }) => {
             return (
