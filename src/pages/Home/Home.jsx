@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex-col mx-[24px] lg:mx-[15%] border border-green-uruzin">
+      <div className="flex-col mx-[24px] lg:mx-[15%] ">
         <Main />
         <Layanan />
         <CTA />

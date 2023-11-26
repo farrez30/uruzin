@@ -46,8 +46,9 @@ const KomitmenKami = () => {
     },
   ];
   return (
-    <section id="tentangkami" className="max-w-[1170px] mb-[40px] lg:mb-[152px] lg:pt-[150px]">
-      <div class="lg:hidden flex flex-row gap-[14px] mb-[35px]">
+    <section id="tentangkami" className=" mb-[40px] lg:mb-[152px] lg:pt-[150px]">
+      {/* Mobile cards */}
+      <div class="lg:hidden flex flex-row gap-[4px] mb-[35px]">
         <div className="flex flex-col gap-[10px] w-[50%]">
           {validasiLayanan.slice(0, 2).map(({ id, title, desc }) => {
             return (
@@ -110,14 +111,14 @@ const KomitmenKami = () => {
       </article>
       {/* //? Section Bawah  ///////////////////////////////////////////////////////////////////////////////////////////// */}
       <div className="flex lg:gap-[115px]">
-        <ul className="flex-col flex gap-10 lg:my-[31.5px] lg:w-[50%] border border-dashed">
+        <ul className="flex-col flex gap-10 lg:my-[31.5px] lg:w-[50%]">
           {fiturLayanan.map(({ id, image, title, desc }) => {
             return (
-              <li className="flex flex-col lg:flex-row border">
+              <li className="flex flex-col lg:flex-row">
                 <img
                   src={image}
                   alt={title}
-                  className="bg-light-green-uruzin max-w-[41px] lg:max-h-9 p-2 rounded-[4px] mr-4"
+                  className="bg-light-green-uruzin mb-[10px] max-w-[41px] lg:max-h-9 p-2 rounded-[4px] mr-4"
                 />
                 <div className="flex-col flex">
                   <h1 className="font-dm font-normal text-[20px] lg:text-[18px] leading-normal text-primary-content-uruzin tracking-[0px] mb-[10px]">

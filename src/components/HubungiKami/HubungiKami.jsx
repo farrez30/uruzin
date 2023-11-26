@@ -11,11 +11,11 @@ const HubungiKami = () => {
             HUBUNGI KAMI
           </h2>
           <title className="flex mb-[10px] lg:mb-auto lg:py-5 items-center">
-            <h1 className="font-poppins font-medium text-[35px] lg:text-[40px] leading-[50px] lg:leading-[80px] text-dark-blue-uruzin -tracking-[0.5px]">
+            <h1 className="font-poppins font-medium text-[35px] lg:text-[40px] leading-[60px] lg:leading-[60px] text-dark-blue-uruzin -tracking-[0.5px]">
               Uruzin Siap Membantu Usaha Anda!
             </h1>
           </title>
-          <p className="font-poppins font-normal text-[16px] leading-[35px] text-gray-uruzin tracking-[0px] mb-[35px] lg:mb-5">
+          <p className="font-poppins font-normal text-[16px] leading-[25px] lg:leading-[35px] text-gray-uruzin tracking-[0px] mb-[35px] lg:mb-5">
             Butuh bantuan atau informasi lebih lanjut? Jangan ragu untuk menghubungi tim kami. Kami siap membantu
             memperlancar perjalanan izin usaha Anda.
           </p>
@@ -28,22 +28,23 @@ const HubungiKami = () => {
             <p className="font-poppins font-normal text-[16px] leading-[25.6px] text-gray-uruzin tracking-[0px] mb-[20px] lg:mb-[35px]">
               Ruko Heavenland Park BB26, Jalan Lingkar Timur, Kabupaten Sidoarjo
             </p>
+            <hr className="border-[1px] border-light-gray-uruzin mb-5"/>
             <a href="https://maps.app.goo.gl/cVxVoUmsMncQW6Ct9">
               <img src={gmaps} alt="Alamat Uruzin via Google Maps" />
             </a>
           </div>
-          <div className="flex flex-col max-w-[354px]">
+          <div className="flex flex-col lg:max-w-[354px] wrap lg:flex-nowrap">
             <h1 className="font-poppins font-semibold text-[20px] leading-[32px] text-primary-content-uruzin tracking-[0px] mb-[15px]">
               Mari Berkoneksi!
             </h1>
-            <div className="flex justify-between mb-[35px] lg:gap-5">
+            <div className="flex justify-start gap-2 mb-[15px] lg:mb-[35px] lg:gap-5">
               <a
-                href=""
+                href="https://wa.me/6285186845500"
                 className="font-poppins font-normal text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
               >
                 +62 851-8684-5500
               </a>
-              <p>|</p>
+              <p className="">|</p>
               <a
                 href="mailto:uruzin@gmail.com"
                 className="font-poppins font-normal text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
@@ -51,6 +52,7 @@ const HubungiKami = () => {
                 uruzin@gmail.com
               </a>
             </div>
+            <hr className="border-[1px] border-light-gray-uruzin mb-5"/>
             <div className="flex justify-start items-center gap-[17px]">
               <a href="#footer">
                 <img src={facebook} alt="Media Sosial Facebook Uruzin" />

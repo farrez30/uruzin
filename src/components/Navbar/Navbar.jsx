@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { uruzinLogo } from "../../assets/picture";
-
+import { FaBars, FaTimes } from "react-icons/fa";
 
 // * dari flowbite //////////////////////////////
 // const Navbar = () => {
 //   const [activeNav, setActiveNav] = useState("#");
-  
+
 //   // Fungsi untuk memantau posisi scroll
 //   const menuItem = [
 //     {
@@ -52,7 +52,6 @@ import { uruzinLogo } from "../../assets/picture";
 
 //   return (
 //     <>
-      
 
 // <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
 //   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -92,7 +91,6 @@ import { uruzinLogo } from "../../assets/picture";
 //   );
 // };
 // * dari flowbite //////////////////////////////
-
 
 // ! Official tailwind navbar version /////////////////////
 // import { Fragment } from 'react'
@@ -156,7 +154,7 @@ import { uruzinLogo } from "../../assets/picture";
 //                     </div>
 //                   </div>
 //                 </div>
-      
+
 //               </div>
 //             </div>
 //             <Disclosure.Panel className="sm:hidden">
@@ -185,10 +183,95 @@ import { uruzinLogo } from "../../assets/picture";
 // }
 // ! Official tailwind navbar version /////////////////////
 
-// todo: self try improve /////////////////////////////
+// todo: self try improve (for acuan final version (kerjain yang draft version dulu)) /////////////////////////////
+// const Navbar = () => {
+//   const [activeNav, setActiveNav] = useState("#");
+
+//   // Fungsi untuk memantau posisi scroll
+//   const menuItem = [
+//     {
+//       to: "#layanan",
+//       title: "Layanan",
+//     },
+//     {
+//       to: "#tentangkami",
+//       title: "Tentang Kami",
+//     },
+//     {
+//       to: "#qna",
+//       title: "QnA",
+//     },
+//     {
+//       to: "#hubungikami",
+//       title: "Hubungi Kami",
+//     },
+//   ];
+//   const handleScroll = () => {
+//     // Menentukan bagian mana yang sedang aktif berdasarkan posisi scroll
+//     for (const section of menuItem) {
+//       const elem = document.querySelector(section.to);
+//       if (elem) {
+//         const rect = elem.getBoundingClientRect();
+//         if (rect.top <= 300 && rect.bottom >= 300) {
+//           setActiveNav(section.to);
+//           break; // Keluar dari loop setelah menemukan bagian yang aktif
+//         }
+//       }
+//     }
+//   };
+
+//   // Menjalankan handleScroll saat komponen dimuat dan ketika scrolling terjadi
+//   useEffect(() => {
+//     handleScroll(); // Memastikan kondisi awal saat komponen dimuat
+//     window.addEventListener("scroll", handleScroll);
+
+//     // Membersihkan event listener saat komponen unmount
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
+
+//   return (
+//     <>
+//       <div className="flex justify-between px-[24px] lg:px-[15%] bg-white-pure py-[19px] lg:py-12 sticky top-0 z-50">
+//         <div>
+//           <img src={uruzinLogo} className="h-[17px] lg:h-9" alt="uruzin logo" />
+//         </div>
+//         <div className="flex gap-14">
+//           {menuItem.map(({ to, title }) => {
+//             return (
+//               <>
+//                 <a
+//                   href={to}
+//                   onClick={() => setActiveNav(to)}
+//                   className={`hidden lg:block hover:text-green-uruzin font-poppins font-medium text-[16px] leading-[33px] tracking-[0px] text-dark-blue-uruzin ${
+//                     activeNav === to ? "text-green-uruzin" : ""
+//                   }`}
+//                 >
+//                   {title}
+//                 </a>
+//               </>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+// todo: self try improve (for acuan final version (kerjain yang draft version dulu)) /////////////////////////////
+
+// ///////////////////////////////////////////////////
+
+// todo: self try improve (draft version) /////////////////////////////
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   const [activeNav, setActiveNav] = useState("#");
-  
+
+  const handleMenu = () => {
+    setOpen((prev) => !prev);
+    console.log(open);
+  };
+
   // Fungsi untuk memantau posisi scroll
   const menuItem = [
     {
@@ -235,37 +318,91 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between px-[24px] lg:px-[15%] bg-white-pure py-[19px] lg:py-12 sticky top-0 z-50">
-        <div>
-          <img src={uruzinLogo} className="h-[17px] lg:h-9" alt="uruzin logo" />
+      <div class="sticky top-0 z-50 bg-white-pure">
+        {/* //! Desktop menu */}
+        {/* <divaaaaaaaaaaa className="mx-auto px-4 sm:px-6 lg:px-8"> */}
+        <div
+          // className="flex items-center justify-between   h-16"
+          className="flex justify-between px-[24px] lg:px-[15%] bg-white-pure py-[19px] lg:py-[24px] sticky top-0 z-50"
+        >
+          <div className="flex items-center">
+            <img src={uruzinLogo} className="h-[17px] lg:h-9" alt="uruzin logo" />
+          </div>
+          {/* //! Navlinks */}
+          <div className="hidden lg:block">
+            <div className="ml-10 flex gap-14 items-baseline space-x-4">
+              {menuItem.map(({ to, title }, index) => {
+                return (
+                  <a
+                    // className="text-light-dark-uruzin transition-all duration-500 hover:bg-light-gray-uruzin hover:text-white-pure px-3 py-2 rounded-md text-md font-poppins font-medium"
+
+                    onClick={() => setActiveNav(to)}
+                    className={`hidden lg:block hover:text-green-uruzin font-poppins font-medium text-[16px] leading-[33px] tracking-[0px] text-dark-blue-uruzin transition-all duration-500 ${
+                      activeNav === to ? "text-green-uruzin" : ""
+                    }`}
+                    key={index}
+                    href={to}
+                  >
+                    {title}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+          {/* //! Conditional Hamburger button */}
+          <div className="-mr-2 flex lg:hidden">
+            <button
+              type="button"
+              onClick={handleMenu}
+              className="
+              inline-flex items-center justify-center p-2 rounded-md text-black-uruzin 
+              hover:text-green-uruzin hover:bg-light-gray-uruzin 
+              "
+              // onBlur={handleMenu}
+
+              // className="
+              // inline-flex items-center justify-center p-2 rounded-md text-black-uruzin
+              // hover:text-white-pure hover:bg-gray-uruzin
+              // focus:outline-none focus:ring-2 focus:ring-offset-2
+              // focus:ring-offset-dark-blue-uruzin focus:ring-white-pure
+              // "
+            >
+              <span className="sr-only">Open Main Menu</span>
+              {open === true ? <FaTimes /> : <FaBars />}
+            </button>
+          </div>
         </div>
-        <div className="flex gap-14">
-          {menuItem.map(({ to, title }) => {
-            return (
-              <>
-                <a
-                  href={to}
-                  onClick={() => setActiveNav(to)}
-                  className={`hidden lg:block hover:text-green-uruzin font-poppins font-medium text-[16px] leading-[33px] tracking-[0px] text-dark-blue-uruzin ${
-                    activeNav === to ? "text-green-uruzin" : ""
-                  }`}
-                >
-                  {title}
-                </a>
-              </>
-            );
-          })}
-        </div>
+        {/* </divaaaaaaaaaaa> */}
+        {/* //! Mobile-menu */}
+        {open ? (
+          <div className="lg:hidden bg-white-pure">
+            <div className="flex flex-col items-center px-2 pt-2 pb-3 space-y-1">
+              {menuItem.map(({ to, title }, index) => {
+                return (
+                  index !== 2 && (
+                    <a
+                      className="text-dark-blue-uruzin transition-all duration-500 hover:bg-light-gray-uruzin hover:text-green-uruzin px-3 py-2 rounded-md text-base block font-poppins font-medium"
+                      key={index}
+                      href={to}
+                    >
+                      {title}
+                    </a>
+                  )
+                );
+              })}
+            </div>
+          </div>
+        ) : null}
       </div>
     </>
   );
 };
-// todo: self try improve /////////////////////////////
+// todo: self try improve (draft version) /////////////////////////////
 
 // ? Previous navbar ////////////////////////////////
 // const Navbar = () => {
 //   const [activeNav, setActiveNav] = useState("#");
-  
+
 //   // Fungsi untuk memantau posisi scroll
 //   const menuItem = [
 //     {
@@ -338,7 +475,6 @@ const Navbar = () => {
 //   );
 // };
 // ? Previous navbar ////////////////////////////////
-
 
 // const Navbar = () => {
 //   const [activeSection, setActiveSection] = useState(null);
