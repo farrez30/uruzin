@@ -4,7 +4,7 @@ import EmailForm from "./EmailForm";
 
 const HubungiKami = () => {
   return (
-    <section id="hubungikami" className="flex flex-col mb-[70px] pt-10 lg:pt-[168px]">
+    <section id="hubungikami" className="flex flex-col mb-[40px] lg:mb-[70px] pt-10 lg:pt-[168px]">
       <div className="flex flex-col lg:flex-row lg:items-center lg:gap-[170px]">
         <article className="flex flex-col lg:w-[50%]">
           <h2 className="hidden lg:block font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max">
@@ -36,7 +36,7 @@ const HubungiKami = () => {
             <h1 className="font-poppins font-semibold text-[20px] leading-[32px] text-primary-content-uruzin tracking-[0px] mb-[15px]">
               Mari Berkoneksi!
             </h1>
-            <div className="flex justify-between mb-[35px] gap-5">
+            <div className="flex justify-between mb-[35px] lg:gap-5">
               <a
                 href=""
                 className="font-poppins font-normal text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
