@@ -5,9 +5,9 @@ import { vector } from "../../assets/picture";
 const CTA = () => {
   return (
     <>
-      <div className="w-[100%] h-[360px] -mt-[360px] relative border border-solid border-green-uruzin rounded-[20px] bg-none -z-10 top-[342px] right-3.5"></div>
-      <img src={vector} alt="just decoration" className="absolute right-[15%]" />
-      <div className="font-['Poppins'] flex-col bg-vector bg-gradient-to-br from-[#009d5a] to-[#007342] rounded-[20px] px-14 pb-32 pt-[69px] pl-[67px] max-h-[360px]">
+      <div className="hidden lg:block w-[100%] h-[360px] -mt-[360px] relative border border-solid border-green-uruzin rounded-[20px] bg-none -z-10 top-[342px] right-3.5"></div>
+      <img src={vector} alt="just decoration" className="hidden lg:block absolute right-[15%]" />
+      <div className="hidden lg:flex font-['Poppins'] flex-col bg-vector bg-gradient-to-br from-[#009d5a] to-[#007342] rounded-[20px] px-14 pb-32 pt-[69px] pl-[67px] max-h-[360px]">
         <h1 className="font-poppins font-medium text-[40px] leading-[60px] -tracking-[1.5px] text-white-pure mb-2 z-30">
           Bingung mau mulai dari mana?
         </h1>
@@ -16,7 +16,7 @@ const CTA = () => {
         </h2>
         <a
           href="https://wa.me/6285186845500"
-          className="font-dm font-bold text-[18px] leading-[10px] tracking-[0px] text-green-uruzin bg-white-pure px-5 py-3 rounded-lg mb-7"
+          className="text-center font-dm font-bold text-[18px] leading-[10px] tracking-[0px] text-green-uruzin bg-white-pure max-w-[172px] px-[25px] py-[25px] rounded-[6px] mb-7"
         >
           Hubungi Kami
         </a>
