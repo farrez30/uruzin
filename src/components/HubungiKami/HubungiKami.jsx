@@ -29,7 +29,7 @@ const HubungiKami = () => {
               Ruko Heavenland Park BB26, Jalan Lingkar Timur, Kabupaten Sidoarjo
             </p>
             <hr className="border-[1px] border-light-gray-uruzin mb-5"/>
-            <a href="https://maps.app.goo.gl/cVxVoUmsMncQW6Ct9">
+            <a target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/cVxVoUmsMncQW6Ct9">
               <img src={gmaps} alt="Alamat Uruzin via Google Maps" />
             </a>
           </div>
@@ -39,14 +39,14 @@ const HubungiKami = () => {
             </h1>
             <div className="flex justify-start gap-2 mb-[15px] lg:mb-[35px] lg:gap-5">
               <a
-                href="https://wa.me/6285186845500"
+                target="_blank" rel="noreferrer" href="https://wa.me/6285186845500"
                 className="font-poppins font-normal text-[15px] lg:text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
               >
                 +62 851-8684-5500
               </a>
               <p className="">|</p>
               <a
-                href="mailto:uruzin@gmail.com"
+                target="_blank" rel="noreferrer" href="mailto:uruzin@gmail.com"
                 className="font-poppins font-normal text-[15px] lg:text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
               >
                 uruzin.id@gmail.com
