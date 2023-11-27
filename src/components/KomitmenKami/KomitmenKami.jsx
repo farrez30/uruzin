@@ -48,8 +48,8 @@ const KomitmenKami = () => {
   return (
     <section id="tentangkami" className=" mb-[40px] lg:mb-[152px] lg:pt-[150px]">
       {/* Mobile cards */}
-      <div class="lg:hidden flex flex-row gap-[4px] mb-[35px]">
-        <div className="flex flex-col gap-[10px] w-[50%]">
+      <div class="lg:hidden flex flex-row mb-[35px] gap-[14px] justify-center">
+        <div className="flex flex-col gap-[10px]">
           {validasiLayanan.slice(0, 2).map(({ id, title, desc }) => {
             return (
               <div className="flex flex-col px-[40px] py-[39px] text-center w-[156px] h-[167px] rounded-[10px] bg-white-pure drop-shadow-[0_25px_100px_#44589d14]">
@@ -72,7 +72,7 @@ const KomitmenKami = () => {
             );
           })}
         </div>
-        <div className="flex flex-col gap-[10px] w-[50%]">
+        <div className="flex flex-col gap-[10px]">
           {validasiLayanan.slice(2).map(({ id, title, desc }) => {
             return (
               <div className="flex flex-col px-[10px] py-[39px] text-center w-[156px] h-[167px] rounded-[10px] bg-white-pure drop-shadow-[0_25px_100px_#44589d14]">
