@@ -3,6 +3,7 @@ import {
   checked,
   keuanganTenagaKerja,
   pendirianBadanUsaha,
+  pengaturanInternalPerusahaan,
   registrasiPerizinan,
   right,
   sertifikasiStandar,
@@ -44,8 +45,8 @@ const Layanan = () => {
     {
       id: 4,
       no: "4",
-      image: pendirianBadanUsaha,
-      title: "Pendirian Badan Usaha",
+      image: pengaturanInternalPerusahaan,
+      title: "Pengaturan Internal Perusahaan",
       desc: "Peraturan internal yang jelas dan sesuai perundang-undangan merupakan fondasi yang kokoh untuk pertumbuhan bisnis. Uruzin membantu dalam pembuatan peraturan perusahaan dan pengurusan perubahan akta perusahaan, memastikan bahwa struktur dan kebijakan perusahaan Anda selaras dengan perkembangan bisnis yang dinamis.",
       subJasa: ["Pembuatan Peraturan Perusahaan", "Pengurusan Perubahan Akta Perusahaan", "Layanan Notaris Digital"],
     },

@@ -33,23 +33,23 @@ const HubungiKami = () => {
               <img src={gmaps} alt="Alamat Uruzin via Google Maps" />
             </a>
           </div>
-          <div className="flex flex-col lg:max-w-[354px] wrap lg:flex-nowrap">
+          <div className="flex flex-col lg:max-w-[380px] wrap lg:flex-nowrap">
             <h1 className="font-poppins font-semibold text-[20px] leading-[32px] text-primary-content-uruzin tracking-[0px] mb-[15px]">
               Mari Berkoneksi!
             </h1>
             <div className="flex justify-start gap-2 mb-[15px] lg:mb-[35px] lg:gap-5">
               <a
                 href="https://wa.me/6285186845500"
-                className="font-poppins font-normal text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
+                className="font-poppins font-normal text-[15px] lg:text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
               >
                 +62 851-8684-5500
               </a>
               <p className="">|</p>
               <a
                 href="mailto:uruzin@gmail.com"
-                className="font-poppins font-normal text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
+                className="font-poppins font-normal text-[15px] lg:text-[16px] leading-[28px] text-gray-uruzin tracking-[0px]"
               >
-                uruzin@gmail.com
+                uruzin.id@gmail.com
               </a>
             </div>
             <hr className="border-[1px] border-light-gray-uruzin mb-5"/>

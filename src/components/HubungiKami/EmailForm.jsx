@@ -147,7 +147,7 @@ const EmailForm = () => {
               <div>
                 <label
                   htmlFor="nama"
-                  className="font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px] text-primary-content-uruzin"
+                  className="font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px] text-primary-content-uruzin opacity-60"
                 >
                   Nama
                 </label>
@@ -157,13 +157,20 @@ const EmailForm = () => {
                     name="nama"
                     id="nama"
                     autoComplete="given-name"
-                    className="w-[368px] border-b-[1px] border-light-gray-uruzin px-3.5 py-2 text-gray-900 shadow-sm ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="w-[368px] border-b-[1px] border-light-gray-uruzin px-3.5 py-2 font-poppins font-normal text-[16px] tracking-[0px] leading-[25.6px] text-primary-content-uruzin shadow-sm ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
-                <ErrorMessage name="nama" component="div" className="error mb-5 text-red-pure" />
+                <ErrorMessage
+                  name="nama"
+                  component="div"
+                  className="error mb-5 text-red-pure font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px]"
+                />
               </div>
               <div>
-                <label htmlFor="bidangUsaha" className="text-sm font-semibold leading-6 text-gray-900">
+                <label
+                  htmlFor="bidangUsaha"
+                  className="font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px] text-primary-content-uruzin opacity-60"
+                >
                   Bidang Usaha
                 </label>
                 <div className="mt-2.5">
@@ -172,15 +179,22 @@ const EmailForm = () => {
                     name="bidangUsaha"
                     id="bidangUsaha"
                     autoComplete="family-name"
-                    className="w-[368px] border-b-[1px] border-light-gray-uruzin px-3.5 py-2 text-gray-900 shadow-sm ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="w-[368px] border-b-[1px] border-light-gray-uruzin px-3.5 py-2 font-poppins font-normal text-[16px] tracking-[0px] leading-[25.6px] text-primary-content-uruzin shadow-sm ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
-                <ErrorMessage name="bidangUsaha" component="div" className="error mb-5 text-red-pure" />
+                <ErrorMessage
+                  name="bidangUsaha"
+                  component="div"
+                  className="error mb-5 text-red-pure font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px]"
+                />
               </div>
             </div>
             <div className="flex justify-between">
               <div className="sm:col-span-2">
-                <label htmlFor="email" className="text-sm font-semibold leading-6 text-gray-900">
+                <label
+                  htmlFor="email"
+                  className="font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px] text-primary-content-uruzin opacity-60"
+                >
                   Email
                 </label>
                 <div className="mt-2.5">
@@ -189,13 +203,20 @@ const EmailForm = () => {
                     name="email"
                     id="email"
                     autoComplete="email"
-                    className="w-[368px] border-b-[1px] border-light-gray-uruzin px-3.5 py-2 text-gray-900 shadow-sm ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="w-[368px] border-b-[1px] border-light-gray-uruzin px-3.5 py-2 font-poppins font-normal text-[16px] tracking-[0px] leading-[25.6px] text-primary-content-uruzin shadow-sm ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
-                <ErrorMessage name="email" component="div" className="error mb-5 text-red-pure" />
+                <ErrorMessage
+                  name="email"
+                  component="div"
+                  className="error mb-5 text-red-pure font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px]"
+                />
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="telp" className="text-sm font-semibold leading-6 text-gray-900">
+                <label
+                  htmlFor="telp"
+                  className="font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px] text-primary-content-uruzin opacity-60"
+                >
                   No Telp
                 </label>
                 <div className="relative mt-2.5">
@@ -204,18 +225,25 @@ const EmailForm = () => {
                     name="telp"
                     id="telp"
                     autoComplete="tel"
-                    className="w-[368px] border-b-[1px] border-light-gray-uruzin px-3.5 py-2 text-gray-900 shadow-sm ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="w-[368px] border-b-[1px] border-light-gray-uruzin px-3.5 py-2 font-poppins font-normal text-[16px] tracking-[0px] leading-[25.6px] text-primary-content-uruzin shadow-sm ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     // onChange={(e)=>{
                     //   const value = e.target.value || "";
                     //   setFieldValue('email', value.replace(/\D/g, ""))
                     // }}
                   />
                 </div>
-                <ErrorMessage name="telp" component="div" className="error mb-5 text-red-pure" />
+                <ErrorMessage
+                  name="telp"
+                  component="div"
+                  className="error mb-5 text-red-pure font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px]"
+                />
               </div>
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor="pesan" className="text-sm font-semibold leading-6 text-gray-900">
+              <label
+                htmlFor="pesan"
+                className="font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px] text-primary-content-uruzin opacity-60"
+              >
                 Pesan
               </label>
               <div className="mt-2.5">
@@ -225,10 +253,14 @@ const EmailForm = () => {
                   id="pesan"
                   placeholder="Type your Message"
                   rows={4}
-                  className="w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-light-gray-uruzin placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="w-full rounded-md border-0 px-3.5 py-2 font-poppins font-normal text-[16px] tracking-[0px] leading-[25.6px] text-primary-content-uruzin shadow-sm ring-1 ring-inset ring-light-gray-uruzin placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
-              <ErrorMessage name="pesan" component="div" className="error mb-5 text-red-pure" />
+              <ErrorMessage
+                name="pesan"
+                component="div"
+                className="error mb-5 text-red-pure font-poppins font-semibold text-[12px] tracking-[0px] leading-[19.2px]"
+              />
             </div>
           </div>
           <div className="mt-[37px]">
