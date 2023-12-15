@@ -63,7 +63,7 @@ const Layanan = () => {
     <section id="layanan" 
     // default mobile pt-[17.5px]
     className="flex-col pt-[17.5px] lg:pt-44">
-      <article className="flex-col mx-auto gap-5">
+      <article className="flex flex-col items-center gap-[20]px">
         <h2 className="hidden lg:block font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max mx-auto">
           LAYANAN KAMI
         </h2>

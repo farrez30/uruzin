@@ -58,13 +58,13 @@ const HubungiKami = () => {
             </div>
             <hr className="border-[1px] border-light-gray-uruzin mb-5" />
             <div className="flex justify-start items-center gap-[17px]">
-              <a href="#footer">
+              <a href="https://www.facebook.com/uruzin.id?mibextid=rS40aB7S9Ucbxw6v">
                 <img src={facebook} alt="Media Sosial Facebook Uruzin" />
               </a>
-              <a href="#footer">
+              <a href="https://www.instagram.com/uruzin.id/">
                 <img src={instagram} alt="Media Sosial Instagram Uruzin" />
               </a>
-              <a href="#footer">
+              <a href="#https://www.linkedin.com/company/pt-uruzin-solusi-bisnis/about/">
                 <img src={linkedin} alt="Media Sosial Linkedin Uruzin" />
               </a>
             </div>
