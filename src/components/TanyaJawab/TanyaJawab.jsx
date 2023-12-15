@@ -12,30 +12,48 @@ const TanyaJawab = () => {
       id: 1,
       question: "Apa itu Uruzin?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore fugit harum officiis? Assumenda ab fugit obcaecati laborum vel, itaque dicta labore distinctio id veritatis dolorum officia architecto facere a.",
+        "Perusahaan yang bergerak dibidang jasa konsultan perizinan usaha yang profesional berpengalaman",
     },
     {
       id: 2,
       question: "Apa saja layanan yang ditawarkan oleh Uruzin?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore fugit harum officiis? Assumenda ab fugit obcaecati laborum vel, itaque dicta labore distinctio id veritatis dolorum officia architecto facere a.",
+        "Uruzin menawarkan berbagai layanan, termasuk pembuatan dan registrasi badan usaha, sertifikasi dan standar, registrasi dan perizinan, pengaturan internal perusahaan, serta layanan keuangan dan tenaga kerja.",
     },
     {
       id: 3,
       question: "Bagaimana cara memulai menggunakan layanan Uruzin?",
       answer:
-        "Mudah! Hubungi kami melalui formulir kontak di situs web kami atau langsung menghubungi tim customer service kami. Kami akan memberikan konsultasi gratis dan panduan mengenai layanan yang sesuai untuk kebutuhan bisnis Anda.",
+        "Mudah! Pelaku usaha yang membutuhkan bantuan layanan pengurusan perijinan dapat menghubungi contact center Uruzin melalui nomor +62 851-8684-5500",
     },
     {
       id: 4,
       question: "Apakah Uruzin hanya melayani perusahaan besar?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore fugit harum officiis? Assumenda ab fugit obcaecati laborum vel, itaque dicta labore distinctio id veritatis dolorum officia architecto facere a.",
+        "Tidak, Uruzin melayani berbagai jenis bisnis, baik skala besar maupun skala kecil. Kami percaya bahwa setiap bisnis berhak mendapatkan dukungan yang diperlukan untuk berkembang.",
     },
+    {
+      id: 5,
+      question: "Apakah konsultasi dengan Uruzin berbayar?",
+      answer:
+        "Tidak, konsultasi dengan Uruzin adalah gratis dan tanpa kewajiban. Kami ingin membantu Anda memahami kebutuhan bisnis Anda dan bagaimana kami dapat mendukungnya.",
+    },
+    {
+      id: 6,
+      question: "Apakah Uruzin memberikan layanan konsultasi keuangan?",
+      answer:
+        "Ya, Uruzin menyediakan layanan konsultasi keuangan melalui pengurusan BPJS Ketenagakerjaan, SP PKP (Pengusaha Kena Pajak), dan layanan notaris digital. Kami dapat membantu Anda mengelola aspek keuangan bisnis Anda dengan efisien.",
+    },
+    {
+      id: 7,
+      question: "Berapa lama proses pengurusan perizinan dengan Uruzin?",
+      answer:
+        "Waktu pengurusan perizinan dapat bervariasi tergantung pada jenis layanan yang Anda pilih. Namun, kami berkomitmen untuk menyediakan proses yang cepat dan efisien untuk setiap klien.",
+    }
   ];
   return (
     <div>
-      <section id="qna"  className="hidden lg:flex flex-col pt-44">
+      <section id="qna"  className="hidden lg:flex flex-col">
         <article className="flex-col mx-auto gap-5">
           <h2 className="font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max mx-auto">
             TANYA JAWAB
@@ -60,7 +78,7 @@ const TanyaJawab = () => {
                     {question}
                   </h1>
                 </div>
-                <div className={`content transition-all duration-500`}>
+                <div className={`content transition-all duration-300`}>
                   <p className="font-poppins font-normal text-[16px] tracking-[0px] leading-[32px] text-light-dark-uruzin ml-[37px]">
                     {answer}
                   </p>

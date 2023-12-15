@@ -24,14 +24,14 @@ const KlienKami = () => {
             <img src={klienkami} alt="Klien-klien Uruzin" />
           </div>
         </div>
-        <iframe
+        {/* <iframe
           className="aspect-video rounded-[10px] lg:mx-[99px]"
           src="https://www.youtube.com/embed/XMvf-bprs_E?si=4IzDBXpLfXHeZzMc"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        ></iframe> */}
       </section>
     </>
   );
