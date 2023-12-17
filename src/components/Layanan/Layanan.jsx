@@ -67,7 +67,7 @@ const Layanan = () => {
         <h2 className="hidden lg:block font-poppins font-light text-[12px] leading-normal text-green-uruzin tracking-[2px] rounded-[10px] border border-solid border-green-uruzin py-[5px] px-7 max-w-max mx-auto">
           LAYANAN KAMI
         </h2>
-        <h1 className="font-poppins font-medium text-[35px] leading-[50px] text-black-uruzin -tracking-[0.5px] text-left lg:text-center">
+        <h1 className="font-poppins font-medium text-[35px] leading-[50px] text-black-uruzin -tracking-[0.5px] text-left lg:text-center lg:mt-[21px]">
           Layanan Izin Usaha <i>All in One</i>
         </h1>
         <p className="font-poppins font-normal text-[16px] leading-[25px] text-gray-uruzin tracking-[0px] text-left lg:text-center mx-auto  mt-5 max-w-2xl mb-16">
