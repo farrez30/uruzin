@@ -7,25 +7,58 @@
 /* Awal Kode untuk menghaluskan transisi accordion FAQ pada TanyaJawab.jsx */
 .item .activeIcon {
   @apply hidden;
+  /* overflow: hidden; */
 }
 
 .item.active .inactiveIcon {
-  @apply hidden;
+   @apply hidden;
+  /* overflow: hidden; */
 }
 
 .item.active .activeIcon {
-  @apply block
+  @apply block;
+  /* overflow: block; */
+}
+
+/*? ------------------start of NEW CODE ----------------------- */
+.item .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  -moz-transition: max-height 0.3s ease-in-out;
+  -ms-transition: max-height 0.3s ease-in-out;
+  -o-transition: max-height 0.3s ease-in-out;
 }
 
 .item:not(.active) .content {
-  @apply h-0 overflow-hidden py-0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  -moz-transition: max-height 0.3s ease-in-out;
+  -ms-transition: max-height 0.3s ease-in-out;
+  -o-transition: max-height 0.3s ease-in-out;
 }
 
 .item.active .content {
-  /*! Kalau height diubah ke bukan bentuk angka, transition ga bisa berjalan; */
-  /* @apply h-[200px];  */
-  @apply h-auto; 
+  max-height: 200px;
+  /* Sesuaikan dengan tinggi maksimum yang mungkin dicapai */
 }
+
+/*? ------------------end of NEW CODE ----------------------- */
+
+/* ------------------start of OLD CODE ----------------------- */
+/* .item:not(.active) .content { */
+/* @apply h-0 overflow-hidden py-0; */
+/* } */
+
+/* .item.active .content { */
+/* ! Kalau height diubah ke bukan bentuk angka, transition ga bisa berjalan; */
+/* @apply h-[200px];  */
+/* @apply h-auto;  */
+/* } */
+/* ------------------end of OLD CODE ----------------------- */
 /* Akhir Kode untuk menghaluskan transisi accordion FAQ */
 
 body {
