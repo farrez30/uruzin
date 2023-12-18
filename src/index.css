@@ -6,18 +6,33 @@
 
 /* Awal Kode untuk menghaluskan transisi accordion FAQ pada TanyaJawab.jsx */
 .item .activeIcon {
-  @apply hidden;
-  /* overflow: hidden; */
+  /*@applyhidden:;
+  */display: none;
+  /* transition: display 0.3s ease-in-out;
+  -webkit-transition: display 0.3s ease-in-out;
+  -moz-transition: display 0.3s ease-in-out;
+  -ms-transition: display 0.3s ease-in-out;
+  -o-transition: display 0.3s ease-in-out; */
 }
 
 .item.active .inactiveIcon {
-   @apply hidden;
-  /* overflow: hidden; */
+     /* @apply hidden:;
+  */display: none;
+  /* transition: display 0.3s ease-in-out;
+  -webkit-transition: display 0.3s ease-in-out;
+  -moz-transition: display 0.3s ease-in-out;
+  -ms-transition: display 0.3s ease-in-out;
+  -o-transition: display 0.3s ease-in-out; */
 }
 
 .item.active .activeIcon {
-  @apply block;
-  /* overflow: block; */
+  /*@applyblock:;
+  */display: block;
+  /* transition: display 0s ease-in-out;
+  -webkit-transition: display 0s ease-in-out;
+  -moz-transition: display 0s ease-in-out;
+  -ms-transition: display 0s ease-in-out;
+  -o-transition: display 0s ease-in-out; */
 }
 
 /*? ------------------start of NEW CODE ----------------------- */
